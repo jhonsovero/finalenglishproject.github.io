@@ -5,11 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robert Downey Jr. Fan Page</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #a6192e; /* Iron Man red */
+      text-align: center;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #ffcc00; /* Iron Man gold */
+    }
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+      background-color: #2e2e2e;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 10px auto;
+      border: 3px solid #a6192e;
+      border-radius: 10px;
+    }
+    ul {
+      list-style-type: square;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #a6192e;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #cc3333;
+    }
+    #fan-message {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+      color: #ffcc00;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Final Project: Welcome to Robert Downey Jr.'s Fan Page!</h1>
-    <img src="https://colombiavip.com/wp-content/uploads/2019/12/ia.jpg" alt="Robert Downey Jr." />
+    <h1>Welcome to Robert Downey Jr.'s Fan Page!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Robert_Downey_Jr_2014_Comic_Con_%28cropped%29.jpg" alt="Robert Downey Jr." />
   </header>
 
   <main>
@@ -59,12 +111,19 @@
 
     <section class="gallery">
       <h2>Photo Gallery</h2>
-      <div class="gallery-container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Robert_Downey_Jr_2012.jpg" alt="Robert casual" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Robert_Downey_Jr_2008_comic_con.jpg" alt="RDJ Comic Con 2008" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Robert_Downey_Jr_premiere_2019.jpg" alt="Premiere 2019" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Robert_Downey_Jr_2014_Tribeca.jpg" alt="RDJ Tribeca Festival" />
-      </div>
+      <img src="https://media.gettyimages.com/photos/robert-downey-jr-speaks-onstage-during-the-marvel-studios-panel-in-picture-id1799999999" alt="Robert Downey Jr. en la Comic-Con 2024" />
+      <img src="https://media.gettyimages.com/photos/robert-downey-jr-poses-in-the-press-room-during-the-97th-annual-oscars-picture-id1800000000" alt="Robert Downey Jr. en los Premios de la Academia 2025" />
+      <img src="https://people.com/thmb/robert-downey-jr-family-photo.jpg" alt="Robert Downey Jr. con su familia" />
+    </section>
+
+    <section class="group-members">
+      <h2>Group Members</h2>
+      <ul>
+        <li>Maria Fernandez</li>
+        <li>Carlos Gutierrez</li>
+        <li>Lucia Ramirez</li>
+        <li>Jose Mendoza</li>
+      </ul>
     </section>
 
     <button onclick="showMessage()">Click if you're a fan!</button>
@@ -75,6 +134,10 @@
     <p>Created by a Super Fan of Robert Downey Jr. &copy; 2025</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function showMessage() {
+      document.getElementById("fan-message").innerText = "You are awesome, just like Iron Man!";
+    }
+  </script>
 </body>
 </html>
